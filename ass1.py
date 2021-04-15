@@ -22,7 +22,7 @@ from sklearn.datasets import make_classification
 import tensorflow as tf
 from tensorflow import keras
 #read the csv file from dataset
-train= pd.read_csv('train.csv')
+train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
 
 #describing the data 
