@@ -28,7 +28,7 @@ test = pd.read_csv('test.csv')
 #describing the data 
 train.describe()
 
-#dispalying the data which is the head of dataset
+#displaying the data which is the head of dataset
 train.head()
 #splitting the data for cross validation
 train,test=train_test_split(train,test_size=0.25)
