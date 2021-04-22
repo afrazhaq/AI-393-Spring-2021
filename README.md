@@ -57,7 +57,7 @@ Since our case is a classification problem with multple possible outcomes (digit
 
 at this point we try to filter out and reshape the images in 5x5 which give us the better result and more accuracy to point.
 
-**train,test=train_test_split(train,test_size=0.25)
+**train,test=train_test_split(train,test_size=0.25)**
 
 at this parameter we just split our data to train it seperately which guide us to **cross-validation** to split data.
 
