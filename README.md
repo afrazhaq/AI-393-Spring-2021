@@ -61,7 +61,7 @@ at this point we try to filter out and reshape the images in 5x5 which give us t
 
 at this parameter we just split our data to train it seperately which guide us to **cross-validation** to split data.
 
-##Short Description About Techniques##
+## Short Description About Techniques ##
 we using the 5 techniques to improve the training of our model and make it produce the more better results further **(svm,knn,neural,linear regression,convo)**
 by usig these 5 techniques our understanding is much more improve rearding how can 
 
