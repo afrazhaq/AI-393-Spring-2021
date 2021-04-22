@@ -33,10 +33,8 @@ For cross validation we have to split data and to acquire this we use **train_te
 
 ## Some info about parameters ## 
 
-X_train.shape
-y_train.shape
-X_test.shape
-mnb = MultinomialNB()
+
+**mnb = MultinomialNB()**
 
 
 **param_grid = {'alpha': [0.00001, 0.0001, 0.001, 0.01, 0.1, 0.5, 1.0, 10.0],**
@@ -51,6 +49,8 @@ mnb = MultinomialNB()
 For the first algorithm, I am choosing to use the **Naive-Bayes classifier**. Assuming that all predictors have an equal effect on the outcome and one predictor variable does not affect the presence of another, the algorithm seems like a good choice.
 
 Since our case is a classification problem with multple possible outcomes (digits 0 to 9), the **Multinomial** type of **Naive-Bayes Classifier** would be a better fit compared to the other 2 types. The Bernoulli type recommends a binary outcome whereas the Gaussian type requires predictors to be continous. 
+
+from sklearn we also import our different libraries to help us in training model and get us to train that dataset in more efficent way.
 
 **train_images = np.reshape(X_train, (len(X_train),5,5))**
 **test_images = np.reshape(X_test, (len(X_test),5,5))**
