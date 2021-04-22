@@ -56,6 +56,7 @@ Since our case is a classification problem with multple possible outcomes (digit
 **test_images = np.reshape(X_test, (len(X_test),5,5))**
 
 at this point we try to filter out and reshape the images in 5x5 which give us the better result and more accuracy to point.
+
 **def layer_size(X, Y):**
   
 **n_x = X.shape[1]**
