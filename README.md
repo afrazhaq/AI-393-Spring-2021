@@ -79,7 +79,15 @@ at this parameter we just split our data to train it seperately which guide us t
 
 ## Short Description About Techniques ##
 we using the 5 techniques to improve the training of our model and make it produce the more better results further **(svm,knn,neural,linear regression,convo)**
-by usig these 5 techniques our understanding is much more improve rearding how can 
+by usig these 5 techniques our understanding is much more improve rearding how can we train our model in way that produce more accurate resutlts.
+
+okay so first we use the svm which give us the maximum accuracy about 40.6% which is in our first try it's not so bad but after then we applied on it the linear regression which give us about 51.6%.
+
+but to improve it more we applied some neural functions on it to train our model in a more accurate way so after then it give us the maximum 65% that's the more better result then our previous one after then we applied the KNN on our dataset and after applying this approch about more than several times ouer accuracy reach to the 99.26% after then we stop train
+our model after applying it several times we notice the variations in accuracy which model is giving us because of data become more and more accurate 
+
+so after the all discussion we here to say that among all techniques our KNN technique is one of the best among to train our model and predict the dataset and give us the best accuracy among others.
+
 
 This repository contains assignments and project submitted to AI course offered in Spring 2021 at KIET.
 
