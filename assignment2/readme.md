@@ -29,4 +29,4 @@ For cross validation we have to split data and we use **train_test_split** metho
 **Support Vector Machine or SVM** is a supervised machine learning algorithm which manipulates the kernel into data transformation. We use this algorithm to train our model and predict possible outcomes.
 
 
-This repository contains assignments and project submitted to AI course offered in Spring 2021 at KIET.
+This folder contains assignment submitted for AI course offered in Spring 2021 at KIET.
