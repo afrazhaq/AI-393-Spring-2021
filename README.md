@@ -52,6 +52,14 @@ For the first algorithm, I am choosing to use the Naive-Bayes classifier. Assumi
 
 Since our case is a classification problem with multple possible outcomes (digits 0 to 9), the Multinomial type of Naive-Bayes Classifier would be a better fit compared to the other 2 types. The Bernoulli type recommends a binary outcome whereas the Gaussian type requires predictors to be continous. 
 
+train_images = np.reshape(X_train, (len(X_train),5,5))
+test_images = np.reshape(X_test, (len(X_test),5,5))
+
+at this point we try to filter out and reshape the images in 5x5 which give us the better result and more accuracy to point.
+
+train,test=train_test_split(train,test_size=0.25)
+
+at this parameter we just split our data to train it seperately which guide us to cross-validation to split data.
 
 This repository contains assignments and project submitted to AI course offered in Spring 2021 at KIET.
 
