@@ -33,19 +33,19 @@ For cross validation we have to split data and to acquire this we use **train_te
 
 ## Some info about parameters ## 
 
+```py
+mnb = MultinomialNB()
 
-**mnb = MultinomialNB()**
 
+param_grid = {'alpha': [0.00001, 0.0001, 0.001, 0.01, 0.1, 0.5, 1.0, 10.0],
+              'fit_prior': [True,False]}
 
-**param_grid = {'alpha': [0.00001, 0.0001, 0.001, 0.01, 0.1, 0.5, 1.0, 10.0],**
-              **'fit_prior': [True,False]}**
+mnb_GS = GridSearchCV(mnb, param_grid, cv=5, verbose=2, n_jobs=1)
 
-**mnb_GS = GridSearchCV(mnb, param_grid, cv=5, verbose=2, n_jobs=1)**
+tiny_model.fit(X_train, y_train, epochs=5, batch_size=32)
 
-**tiny_model.fit(X_train, y_train, epochs=5, batch_size=32)**
-
-**test_loss, test_acc = tiny_model.evaluate(X_test,  y_test, verbose=2)**
-
+test_loss, test_acc = tiny_model.evaluate(X_test,  y_test, verbose=2)
+```
 For the first algorithm, I am choosing to use the **Naive-Bayes classifier**. Assuming that all predictors have an equal effect on the outcome and one predictor variable does not affect the presence of another, the algorithm seems like a good choice.
 
 Since our case is a classification problem with multple possible outcomes (digits 0 to 9), the **Multinomial** type of **Naive-Bayes Classifier** would be a better fit compared to the other 2 types. The Bernoulli type recommends a binary outcome whereas the Gaussian type requires predictors to be continous. 
