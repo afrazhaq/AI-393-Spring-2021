@@ -61,5 +61,13 @@ at this point we try to filter out and reshape the images in 5x5 which give us t
 
 at this parameter we just split our data to train it seperately which guide us to **cross-validation** to split data.
 
+we using the 5 techniques to improve the training of our model and make it produce the more better results further 
+
+**1. convo** 
+**2. knn**
+**3. neural** 
+**4. svm**
+**5. linear regression**
+
 This repository contains assignments and project submitted to AI course offered in Spring 2021 at KIET.
 
