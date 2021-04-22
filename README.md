@@ -59,11 +59,17 @@ at this point we try to filter out and reshape the images in 5x5 which give us t
 **def layer_size(X, Y):**
   
 **n_x = X.shape[1]**
+
+
 **n_h = 4**
+
+
 **n_y = Y.shape[1]**
+
+
 **return (n_x, n_h, n_y)**
    
-  here we start using the neural network to train our data set we intilaize the function layer to return the size and twerek it more to fit our model 
+here we start using the neural network to train our data set we intilaize the function layer to return the size and twerek it more to fit our model 
  
 
 **train,test=train_test_split(train,test_size=0.25)**
