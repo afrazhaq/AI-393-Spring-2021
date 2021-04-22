@@ -8,10 +8,10 @@ StdID | Name
 63361 | Naufil Bin Majid
 
 # Abstract #
-In this project, we have used the following technologies:
+In this project, we have implemented the following technologies:
 
+## 1. Training Data ##
 **For Training Data,** we used train.csv file. For reading our training data. Pandas is mostly used to help with data organization and visualization. Since you can put data into dataframes and datasets. We used pandas library tool here to read data from train.csv file.
-
 
 ## 2. Cross Validation ##
 **Cross Validation** is a resampling procedure in which the dataset is randomly split up into 'K' groups. K refers to the number of groups that a given data sample is to be split into. For splitting data we have to give a range of specific value. This procedure is often called K-fold cross validation. We used this procedure to split the dataset into 5 x 3.
@@ -25,11 +25,8 @@ In this project, we have used the following technologies:
 ## 5. SVM ##
 **Support Vector Machine or SVM** is a supervised machine learning algorithm which manipulates the kernel into data transformation. We use this algorithm to train our model and predict possible outcomes.
 
-
 ## 6. Convolution ##
 **convolution** the most common type of convolution that is used is the 2D convolution layer, and is usually abbreviated as conv2DIt has a really small kernel, essentially a window of pixel values, that slides along those two dimensions. The rgb channel is not handled as a small window of depth, but rather, is obtained from beginning to end, first channel to last. That is, even a convolution with a small spatial window of 1x1, which takes a single pixel spatially in the width/height dimensions, would still take all 3 RGB channels.we use it to produce the better images on it to recognize the digit in more better.
-
-
 
 ## 7. KNN ##
 **kNN** KNN algorithm is one of the simplest classification algorithm and it is one of the most used learning algorithms. ... KNN is a non-parametric, lazy learning algorithm. Its purpose is to use a database in which the data points are separated into several classes to predict the classification of a new sample point.The KNN algorithm can compete with the most accurate models because it makes highly accurate predictions. we use it to produce the best accuracy and give us the best result regarding accuracy.
@@ -77,10 +74,10 @@ here we start using the neural network to train our data set we intilaize the fu
 ```py
 train,test = train_test_split(train,test_size = 0.25)
 ```
-at this parameter we just split our data to train it seperately which guide us to **cross-validation** to split data.
+at this parameter we just split our data to train it seperately which guide us to **Cross-Validation** to split data.
 
 ## Short Description About Techniques ##
-we using the 5 techniques to improve the training of our model and make it produce the more better results further **(svm,knn,neural,linear regression,convo)**
+we have implemented 5 techniques to improve the training of our model and produce better results **(svm,knn,neural,linear regression,convo)**
 by usig these 5 techniques our understanding is much more improve rearding how can we train our model in way that produce more accurate resutlts.
 
 okay so first we use the svm which give us the maximum accuracy about 40.6% which is in our first try it's not so bad but after then we applied on it the linear regression which give us about 51.6%.
