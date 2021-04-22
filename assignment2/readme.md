@@ -11,11 +11,11 @@ StdID | Name
 In this assignment, we have implemented the following technologies:
 
 ## 1. Training Data ##
-We used train.csv file to train data. For reading our training data. Pandas is mostly used to help with data organization and visualization.Since you can put data into dataframes and datasets. We used pandas library tool here to read train.csv file.
+**For Training Data** we used train.csv file. For reading our training data. Pandas is mostly used to help with data organization and visualization.Since you can put data into dataframes and datasets. We used pandas library tool here to read train.csv file.
 
 
 ## 2. Cross Validation ##
-**Cross-Validation** is a resampling procedure used to evaluate machine learning models on a limited data sample. The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. As such, the procedure is often called k-fold cross-validation.
+**Cross Validation** is a resampling procedure in which the dataset is randomly split up into 'K' groups. K refers to the number of groups that a given data sample is to be split into. This procedure is often called K-fold cross validation. We used this procedure to split the dataset into 5x3.
 
 For cross validation we have to split data and we use **train_test_split** method. For splitting data we have to give a range of specific value.
 
