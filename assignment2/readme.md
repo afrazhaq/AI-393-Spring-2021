@@ -11,7 +11,7 @@ StdID | Name
 In this assignment, we have implemented the following technologies:
 
 ## 1. Training Data ##
-**For Training Data** we used train.csv file. For reading our training data. Pandas is mostly used to help with data organization and visualization.Since you can put data into dataframes and datasets. We used pandas library tool here to read train.csv file.
+**For Training Data** we used train.csv file. For reading our training data. Pandas is mostly used to help with data organization and visualization. Since you can put data into dataframes and datasets. We used pandas library tool here to read data from train.csv file.
 
 
 ## 2. Cross Validation ##
