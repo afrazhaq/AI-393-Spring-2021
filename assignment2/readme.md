@@ -15,9 +15,7 @@ In this assignment, we have implemented the following technologies:
 
 
 ## 2. Cross Validation ##
-**Cross Validation** is a resampling procedure in which the dataset is randomly split up into 'K' groups. K refers to the number of groups that a given data sample is to be split into. This procedure is often called K-fold cross validation. We used this procedure to split the dataset into 5x3.
-
-For cross validation we have to split data and we use **train_test_split** method. For splitting data we have to give a range of specific value.
+**Cross Validation** is a resampling procedure in which the dataset is randomly split up into 'K' groups. K refers to the number of groups that a given data sample is to be split into. For splitting data we have to give a range of specific value. This procedure is often called K-fold cross validation. We used this procedure to split the dataset into 5x3.
 
 ## 3. Naive Bayes ##
 **Naive Bayes** is a supervised machine learning algorithm that’s typically used for classification problems. We used it for solving multi-class classification problems.
