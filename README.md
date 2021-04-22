@@ -10,25 +10,28 @@ StdID | Name
 # Abstract #
 In this project, we have used the following technologies:
 
-## 1. Training Data ##
-We used train.csv file to train data. For reading our training data. Pandas is mostly used to help with data organization and visualization. Since you can put data into dataframes and datasets. We used pandas library tool here to read train.csv file.
+**For Training Data,** we used train.csv file. For reading our training data. Pandas is mostly used to help with data organization and visualization. Since you can put data into dataframes and datasets. We used pandas library tool here to read data from train.csv file.
 
 
-## Cross Validation ##
-**Cross-validation** is a resampling procedure used to evaluate machine learning models on a limited data sample. The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. As such, the procedure is often called k-fold cross-validation.
+## 2. Cross Validation ##
+**Cross Validation** is a resampling procedure in which the dataset is randomly split up into 'K' groups. K refers to the number of groups that a given data sample is to be split into. For splitting data we have to give a range of specific value. This procedure is often called K-fold cross validation. We used this procedure to split the dataset into 5 x 3.
 
-For cross validation we have to split data and to acquire this we use **train_test_split** method. For splitting data we have to give a range of specific value.
+## 3. Naive Bayes ##
+**Naive Bayes** is a supervised machine learning algorithm that’s typically used for classification problems. We used it for solving multi-class classification problems.
 
-## Naive Bayes ##
-**Naive Bayes** is a probabilistic algorithm that’s typically used for classification problems. Naive Bayes is simple, intuitive, and yet performs surprisingly well in many cases. For example, spam filters Email app uses are built on Naive Bayes. In this article, I’ll explain the rationales behind Naive Bayes and build a spam filter in Python. (For simplicity, I’ll focus on binary classification problems).
+## 4. Linear Regression ##
+**Linear Regression** is a mathematical model which is used to predict the value of a variable based on the value of another variable. We used this model for better prediction of our training results.
+
+## 5. SVM ##
+**Support Vector Machine or SVM** is a supervised machine learning algorithm which manipulates the kernel into data transformation. We use this algorithm to train our model and predict possible outcomes.
 
 
-## Convolution ##
+## 6. Convolution ##
 **convolution** the most common type of convolution that is used is the 2D convolution layer, and is usually abbreviated as conv2DIt has a really small kernel, essentially a window of pixel values, that slides along those two dimensions. The rgb channel is not handled as a small window of depth, but rather, is obtained from beginning to end, first channel to last. That is, even a convolution with a small spatial window of 1x1, which takes a single pixel spatially in the width/height dimensions, would still take all 3 RGB channels.we use it to produce the better images on it to recognize the digit in more better.
 
 
 
-## KNN ##
+## 7. KNN ##
 **kNN** KNN algorithm is one of the simplest classification algorithm and it is one of the most used learning algorithms. ... KNN is a non-parametric, lazy learning algorithm. Its purpose is to use a database in which the data points are separated into several classes to predict the classification of a new sample point.The KNN algorithm can compete with the most accurate models because it makes highly accurate predictions. we use it to produce the best accuracy and give us the best result regarding accuracy.
 
 ## Some info about parameters ## 
