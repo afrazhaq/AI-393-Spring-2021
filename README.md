@@ -36,15 +36,14 @@ For cross validation we have to split data and to acquire this we use **train_te
 ```py
 mnb = MultinomialNB()
 
-
 param_grid = {'alpha': [0.00001, 0.0001, 0.001, 0.01, 0.1, 0.5, 1.0, 10.0],
               'fit_prior': [True,False]}
 
-mnb_GS = GridSearchCV(mnb, param_grid, cv=5, verbose=2, n_jobs=1)
+mnb_GS = GridSearchCV(mnb,param_grid,cv = 5,verbose = 2,n_jobs = 1)
 
-tiny_model.fit(X_train, y_train, epochs=5, batch_size=32)
+tiny_model.fit(X_train, y_train,epochs = 5,batch_size = 32)
 
-test_loss, test_acc = tiny_model.evaluate(X_test,  y_test, verbose=2)
+test_loss,test_acc = tiny_model.evaluate(X_test,y_test,verbose = 2)
 ```
 For the first algorithm, I am choosing to use the **Naive-Bayes classifier**. Assuming that all predictors have an equal effect on the outcome and one predictor variable does not affect the presence of another, the algorithm seems like a good choice.
 
@@ -52,29 +51,29 @@ Since our case is a classification problem with multple possible outcomes (digit
 
 from sklearn we also import our different libraries to help us in training model and get us to train that dataset in more efficent way.
 
-**train_images = np.reshape(X_train, (len(X_train),5,5))**
-**test_images = np.reshape(X_test, (len(X_test),5,5))**
-
+```py
+train_images = np.reshape(X_train,(len(X_train),5,5))
+test_images = np.reshape(X_test,(len(X_test),5,5))
+```
 at this point we try to filter out and reshape the images in 5x5 which give us the better result and more accuracy to point.
 
-**def layer_size(X, Y):**
+```py
+def layer_size(X,Y):
   
-**n_x = X.shape[1]**
+n_x = X.shape[1]
 
+n_h = 4
 
-**n_h = 4**
+n_y = Y.shape[1]
 
-
-**n_y = Y.shape[1]**
-
-
-**return (n_x, n_h, n_y)**
+return (n_x,n_h,n_y)
+```
    
 here we start using the neural network to train our data set we intilaize the function layer to return the size and twerek it more to fit our model 
  
-
-**train,test=train_test_split(train,test_size=0.25)**
-
+```py
+train,test = train_test_split(train,test_size = 0.25)
+```
 at this parameter we just split our data to train it seperately which guide us to **cross-validation** to split data.
 
 ## Short Description About Techniques ##
