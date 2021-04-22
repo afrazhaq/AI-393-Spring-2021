@@ -23,3 +23,9 @@ For cross validation we have to split data and to acquire this we use **train_te
 **Naive Bayes** is a probabilistic algorithm that’s typically used for classification problems. Naive Bayes is simple, intuitive, and yet performs surprisingly well in many cases. For example, spam filters Email app uses are built on Naive Bayes. In this article, I’ll explain the rationales behind Naive Bayes and build a spam filter in Python. (For simplicity, I’ll focus on binary classification problems).
 
 This repository contains assignments and project submitted to AI course offered in Spring 2021 at KIET.
+
+## Convolution ##
+**convolution** the most common type of convolution that is used is the 2D convolution layer, and is usually abbreviated as conv2DIt has a really small kernel, essentially a window of pixel values, that slides along those two dimensions. The rgb channel is not handled as a small window of depth, but rather, is obtained from beginning to end, first channel to last. That is, even a convolution with a small spatial window of 1x1, which takes a single pixel spatially in the width/height dimensions, would still take all 3 RGB channels.we use it to produce the better images on it to recognize the digit in more better.
+
+## KNN ##
+**kNN** KNN algorithm is one of the simplest classification algorithm and it is one of the most used learning algorithms. ... KNN is a non-parametric, lazy learning algorithm. Its purpose is to use a database in which the data points are separated into several classes to predict the classification of a new sample point.The KNN algorithm can compete with the most accurate models because it makes highly accurate predictions. we use it to produce the best accuracy and give us the best result regarding accuracy.
