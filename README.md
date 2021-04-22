@@ -31,6 +31,8 @@ For cross validation we have to split data and to acquire this we use **train_te
 ## KNN ##
 **kNN** KNN algorithm is one of the simplest classification algorithm and it is one of the most used learning algorithms. ... KNN is a non-parametric, lazy learning algorithm. Its purpose is to use a database in which the data points are separated into several classes to predict the classification of a new sample point.The KNN algorithm can compete with the most accurate models because it makes highly accurate predictions. we use it to produce the best accuracy and give us the best result regarding accuracy.
 
+## Some info about parameters ## 
+
 X_train.shape
 y_train.shape
 X_test.shape
