@@ -31,7 +31,7 @@ In this project, we have implemented the following technologies:
 ## 7. KNN ##
 **KNN** algorithm is one of the simplest classification algorithms. KNN algorithm is a frequently used machine learning algorithm. KNN is a non-parametric, lazy learning algorithm. Its purpose is to use a database in which the data points are separated into several classes to predict the classification of a new sample point.The KNN algorithm can compete with the most accurate models because it makes highly accurate predictions. We used it to acquire the highest accuracy in test results.
 
-## Some info about parameters ## 
+## How we tweaked the parameters ## 
 
 ```py
 mnb = MultinomialNB()
@@ -45,17 +45,17 @@ tiny_model.fit(X_train, y_train,epochs = 5,batch_size = 32)
 
 test_loss,test_acc = tiny_model.evaluate(X_test,y_test,verbose = 2)
 ```
-For the first algorithm, I am choosing to use the **Naive-Bayes classifier**. Assuming that all predictors have an equal effect on the outcome and one predictor variable does not affect the presence of another, the algorithm seems like a good choice.
+For the first algorithm, We used the **Naive-Bayes classifier**. Assuming that all predictors have an equal effect on the outcome and one predictor variable does not affect the presence of another, the algorithm seems like a good option.
 
-Since our case is a classification problem with multple possible outcomes (digits 0 to 9), the **Multinomial** type of **Naive-Bayes Classifier** would be a better fit compared to the other 2 types. The Bernoulli type recommends a binary outcome whereas the Gaussian type requires predictors to be continous. 
+Since our case is about a classification problem with multple possible outcomes (digits 0 to 9), the **Multinomial** type of **Naive-Bayes Classifier** would be a better fit compared to the other 2 types. The Bernoulli type recommends a binary outcome whereas the Gaussian type requires predictors to be continous. 
 
-from sklearn we also import our different libraries to help us in training model and get us to train that dataset in more efficent way.
+From sklearn, we also import our different libraries to help us in training model and train that dataset efficently.
 
 ```py
 train_images = np.reshape(X_train,(len(X_train),5,5))
 test_images = np.reshape(X_test,(len(X_test),5,5))
 ```
-at this point we try to filter out and reshape the images in 5x5 which give us the better result and more accuracy to point.
+At this point, we tried to filter out and reshape the images in 5x5 which give us the significantly better results and more accuracy.
 
 ```py
 def layer_size(X,Y):
@@ -69,23 +69,22 @@ n_y = Y.shape[1]
 return (n_x,n_h,n_y)
 ```
    
-here we start using the neural network to train our data set we intilaize the function layer to return the size and twerek it more to fit our model 
+Here, we started using the neural network to train our dataset. We initialized the function layer to return the size and tweaked it to fit our model. 
  
 ```py
 train,test = train_test_split(train,test_size = 0.25)
 ```
-at this parameter we just split our data to train it seperately which guide us to **Cross-Validation** to split data.
+At this parameter, we simply split our data to train it seperately by using **Cross-Validation** to split data.
 
-## Short Description About Techniques ##
-we have implemented 5 techniques to improve the training of our model and produce better results **(svm,knn,neural,linear regression,convo)**
-by usig these 5 techniques our understanding is much more improve rearding how can we train our model in way that produce more accurate resutlts.
+## Few words about Techniques ##
+We have implemented 5 techniques to improve the training of our model and produce better results. **(SVM, KNN, Neural, Linear Regression, Convolution)**. By using these 5 techniques, we understood how exactly we can improve training our model to produce more accurate results.
 
-okay so first we use the svm which give us the maximum accuracy about 40.6% which is in our first try it's not so bad but after then we applied on it the linear regression which give us about 51.6%.
+Firstly, we used SVM which gave us maximum accuracy of 40.6% on first attempt. Then, we applied linear regression which gave us about 51.6% accuracy. To improve it further, we applied some neural network functions which gave us the highest accuracy of 65%. The accuracy was significantly better than our past results. Finally, we applied KNN technique on our dataset, and after several tries the test accuracy reached 99.26% after which we stopped training.
 
-but to improve it more we applied some neural functions on it to train our model in a more accurate way so after then it give us the maximum 65% that's the more better result then our previous one after then we applied the KNN on our dataset and after applying this approch about more than several times ouer accuracy reach to the 99.26% after then we stop train
-our model after applying it several times we notice the variations in accuracy which model is giving us because of data become more and more accurate 
+So, after applying all of the above techniques we can conclude saying that KNN is one of the best techniques for training model and predicting dataset with the highest accuracy.
 
-so after the all discussion we here to say that among all techniques our KNN technique is one of the best among to train our model and predict the dataset and give us the best accuracy among others.
+
+
 
 
 This repository contains assignments and project submitted to AI course offered in Spring 2021 at KIET.
