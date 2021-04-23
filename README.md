@@ -87,6 +87,8 @@ So, after applying all of the above techniques we can conclude saying that KNN i
 ## Kaggle Submission ##
 
 Although implementation of KNN technique gave us 99% test accuracy. To achieve the perfect score for Kaggle competition, we would've opted for implementation of Neural Network. To view more details about our submission, Click on [Kaggle](https://www.kaggle.com/naufilmajid/my-first-submit-1/).
+
+
 <img src="/final project/finalscore.PNG" alt="Highest Kaggle score"/>
 
 
