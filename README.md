@@ -91,6 +91,5 @@ Although implementation of KNN technique gave us 99% test accuracy. To achieve t
 
 <img src="/final project/finalscore.PNG" alt="Highest Kaggle score"/>
 
-
 This repository contains assignments and project submitted to AI course offered in Spring 2021 at KIET.
 
